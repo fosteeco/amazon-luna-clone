@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --luna-color-1: #9046ff;
+  --luna-color-2: #410482;
+  --text-color: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+.main-grid {
+  background-color: #e8e8e8;
+  display: grid;
+  grid-template-columns: 5% 95%;
+  grid-template-rows: 100vh;
+}
+
+.side-tray {
+  background-color: var(--luna-color-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-window {
+  color: var(--text-color);
+  background-color: var(--luna-color-2);
+}
+
+.arrow-wrap {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  height: 2.1rem;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 2.1rem;
+}
+
+.arrow-wrap .fa-chevron-left {
+  position: absolute;
+  left: 10px;
+}
+
+.arrow-wrap .fa-chevron-right {
+  position: absolute;
+  right: 10px;
+}
+
+.side-tray > div:not(:first-child) {
+  margin: 10px 0;
+}
+
+.side-tray-icon-wrap {
+  width: 100%;
+}
+
+.side-tray-icon-wrap img {
+  width: 40%;
+}
+
+.side-tray-icon-wrap .fas {
+  font-size: 28px;
+}
+
+.side-tray-icon-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-tray-icon-wrap p {
+  margin: 0;
+}
+
+.side-tray-icon-wrap.active {
+  border-left: 5px solid #fff;
+}
+
+.profile-wrapper {
+  margin: 0 !important;
+}
+
+.profile-wrapper img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
