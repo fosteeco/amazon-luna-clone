@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -9,13 +11,14 @@
 }
 
 body {
+  font-family: 'Roboto', 'sans-serif';
   margin: 0;
 }
 
 .main-grid {
   background-color: #e8e8e8;
   display: grid;
-  grid-template-columns: 5% 95%;
+  grid-template-columns: 65px 1fr;
   grid-template-rows: 100vh;
 }
 
@@ -24,7 +27,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
 }
 
 .main-window {
@@ -41,7 +43,7 @@ body {
 
 .fa-chevron-left,
 .fa-chevron-right {
-  font-size: 2.1rem;
+  font-size: 1.5rem;
 }
 
 .arrow-wrap .fa-chevron-left {
@@ -55,7 +57,7 @@ body {
 }
 
 .side-tray > div:not(:first-child) {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .side-tray-icon-wrap {
@@ -70,11 +72,23 @@ body {
   font-size: 28px;
 }
 
-.side-tray-icon-wrap {
+.side-tray-icon-wrap a {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.side-tray-icon-wrap a:link {
+  color: inherit;
+}
+
+.side-tray-icon-wrap a:visited {
+  color: inherit;
+}
+.side-tray-icon-wrap a:hover {
+  color: #fff;
 }
 
 .side-tray-icon-wrap p {
@@ -86,12 +100,18 @@ body {
 }
 
 .profile-wrapper {
-  margin: 0 !important;
+  width: 40px;
+  height: 40px;
+  margin-top: auto !important;
 }
 
 .profile-wrapper img {
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.icon-text {
+  font-size: 0.8rem;
 }
