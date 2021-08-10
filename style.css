@@ -7,6 +7,9 @@
 :root {
   --luna-color-1: #9046ff;
   --luna-color-2: #410482;
+  --luna-color-3: #3a0860;
+  --luna-color-bg: #18091e;
+  --luna-light: #b199cb;
   --text-color: #fff;
 }
 
@@ -23,7 +26,8 @@ body {
 }
 
 .side-tray {
-  background-color: var(--luna-color-1);
+  background: linear-gradient(var(--luna-color-bg), var(--luna-color-1));
+  color: var(--luna-light);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +35,7 @@ body {
 
 .main-window {
   color: var(--text-color);
-  background-color: var(--luna-color-2);
+  background-color: var(--luna-color-bg);
 }
 
 .arrow-wrap {
@@ -43,16 +47,15 @@ body {
 
 .fa-chevron-left,
 .fa-chevron-right {
+  position: absolute;
   font-size: 1.5rem;
 }
 
 .arrow-wrap .fa-chevron-left {
-  position: absolute;
   left: 10px;
 }
 
 .arrow-wrap .fa-chevron-right {
-  position: absolute;
   right: 10px;
 }
 
@@ -69,7 +72,7 @@ body {
 }
 
 .side-tray-icon-wrap .fas {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .side-tray-icon-wrap a {
@@ -80,14 +83,17 @@ body {
   transition: 0.3s;
 }
 
-.side-tray-icon-wrap a:link {
+.side-tray-icon-wrap a:link,
+.arrow-wrap a:link {
   color: inherit;
 }
 
-.side-tray-icon-wrap a:visited {
+.side-tray-icon-wrap a:visited,
+.arrow-wrap a:visited {
   color: inherit;
 }
-.side-tray-icon-wrap a:hover {
+.side-tray-icon-wrap a:hover,
+.arrow-wrap a:hover {
   color: #fff;
 }
 
@@ -113,5 +119,6 @@ body {
 }
 
 .icon-text {
-  font-size: 0.8rem;
+  padding-top: 10px;
+  font-size: 0.58rem;
 }
