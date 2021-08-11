@@ -44,6 +44,10 @@ body {
   height: 1.5rem;
 }
 
+.feature-arrows a .fas {
+  font-size: 3rem;
+}
+
 .fa-chevron-left,
 .fa-chevron-right {
   position: absolute;
@@ -119,4 +123,71 @@ body {
   width: 40px;
   height: 40px;
   margin-top: auto !important;
+}
+
+.feature-window {
+  height: 70vh;
+  width: 100%;
+  background-image: radial-gradient(circle, transparent, var(--luna-color-bg)),
+    linear-gradient(rgba(0, 0, 0, 0.6), var(--luna-color-bg) 95%),
+    url('./img/saints-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-info {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.feature-logo {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.feature-logo img {
+  width: 100%;
+}
+
+.feature-text {
+  margin: 5px 0;
+}
+
+.btn.learn-more {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn.learn-more:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.crumb-menu {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crumb-menu .fas {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.5rem;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.crumb-menu .fas.active {
+  font-size: 1.2rem;
+  color: #61e3fe;
 }
