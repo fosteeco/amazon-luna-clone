@@ -36,6 +36,8 @@ body {
 .main-window {
   color: var(--text-color);
   background-color: var(--luna-color-bg);
+  min-height: 100vh;
+  overflow-y: scroll;
 }
 
 .arrow-wrap {
@@ -84,16 +86,22 @@ body {
 }
 
 .side-tray-icon-wrap a:link,
-.arrow-wrap a:link {
+.arrow-wrap a:link,
+.feature-arrows a:link,
+.game-row-arrows a:link {
   color: inherit;
 }
 
 .side-tray-icon-wrap a:visited,
-.arrow-wrap a:visited {
+.arrow-wrap a:visited,
+.feature-arrows a:visited,
+.game-row-arrows a:visited {
   color: inherit;
 }
 .side-tray-icon-wrap a:hover,
-.arrow-wrap a:hover {
+.arrow-wrap a:hover,
+.feature-arrows a:hover,
+.game-row-arrows a:hover {
   color: #fff;
 }
 
@@ -121,4 +129,159 @@ body {
 .icon-text {
   padding-top: 10px;
   font-size: 0.58rem;
+}
+
+.feature-window {
+  height: 70vh;
+  width: 100%;
+  background-image: radial-gradient(circle, transparent, var(--luna-color-bg)),
+    linear-gradient(rgba(0, 0, 0, 0.6), var(--luna-color-bg) 95%),
+    url('./img/saints-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.feature-info {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.feature-logo {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.feature-logo img {
+  width: 100%;
+}
+
+.feature-text {
+  margin: 5px 0;
+}
+
+.btn.learn-more {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn.learn-more:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.crumb-menu {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crumb-menu .fas {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.5rem;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.crumb-menu .fas.active {
+  font-size: 1.2rem;
+  color: #61e3fe;
+}
+
+.feature-arrows .fa-chevron-left,
+.feature-arrows .fa-chevron-right {
+  margin: 0 15px;
+  font-size: 2.5rem;
+}
+
+.feature-arrows .fa-chevron-right {
+  right: 0;
+}
+
+.feature-arrows .fa-chevron-left {
+  left: 0;
+}
+
+.game-row {
+  position: relative;
+  padding: 0 50px;
+  overflow: hidden;
+}
+
+.game-row h2.game-row-title {
+  margin: 0 0 10px 0;
+}
+
+.game-row .row-card {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  /* width: 16vw;
+  height: 9vw; */
+  /* min-width: 240px;
+  min-height: 135px; */
+  width: 240px;
+  height: 135px;
+  border: 1px #fff solid;
+}
+
+.row-card > * {
+  margin: 0;
+}
+
+.game-row .row-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 0;
+}
+
+.game-row-arrows .fa-chevron-right,
+.game-row-arrows .fa-chevron-left {
+  top: 50%;
+  margin: 0 10px;
+}
+
+.game-row-arrows .fa-chevron-right {
+  right: 0;
+}
+
+.game-row-arrows .fa-chevron-left {
+  left: 0;
+}
+
+.card-wrapper {
+  position: relative;
+  /* height: calc(9vw + 2px); */
+  min-height: 137px;
+  width: 100%;
+  /* max-width: 1060px; */
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  transition: 2s ease-in-out;
+  left: 0;
+  /* left: -265px; */
 }
