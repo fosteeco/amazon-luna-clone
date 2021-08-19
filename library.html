@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" defer></script>
+    <title>Amazon Luna Clone</title>
+  </head>
+  <body>
+    <div class="main-grid">
+      <div class="side-tray">
+        <div class="arrow-wrap">
+          <a href=""><i class="fas fa-chevron-left"></i></a>
+          <a href=""><i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="side-tray-icon-wrap">
+          <a href="index.html">
+            <img src="./img/just-luna-logo.svg" alt="" />
+            <p class="icon-text">HOME</p>
+          </a>
+        </div>
+        <div class="side-tray-icon-wrap active">
+          <a href="library.html">
+            <i class="fas fa-th"></i>
+            <p class="icon-text">LIBRARY</p>
+          </a>
+        </div>
+        <div class="side-tray-icon-wrap">
+          <a href="#">
+            <i class="fas fa-layer-group"></i>
+            <p class="icon-text">PLAYLIST</p>
+          </a>
+        </div>
+        <div class="side-tray-icon-wrap">
+          <a href="#">
+            <i class="fas fa-search"></i>
+            <p class="icon-text">SEARCH</p>
+          </a>
+        </div>
+        <div class="side-tray-icon-wrap">
+          <a href="#">
+            <i class="fas fa-cog"></i>
+            <p class="icon-text">SETTINGS</p>
+          </a>
+        </div>
+        <div class="profile-wrapper">
+          <a href="#">
+            <img src="./img/astronaut-profile-img.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="main-window">
+        <h1 class="library-title">LIBRARY</h1>
+        <form id="library-form" class="library-form">
+          <select name="genre-select" id="genre-select">
+            <option
+              value="genre"
+              disabled
+              selected
+              hidden
+              class="default-select"
+            >
+              GENRE
+            </option>
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="arcade">Arcade</option>
+            <option value="fighting">Fighting</option>
+            <option value="horror">Horror</option>
+            <option value="puzzle">Puzzle</option>
+            <option value="racing">Racing</option>
+            <option value="rpg">Rpg</option>
+            <option value="shooter">Shooter</option>
+            <option value="simulation">Simulation</option>
+            <option value="sports">Sports</option>
+            <option value="strategy">Strategy</option>
+          </select>
+          <select name="game-type-select" id="game-type-select">
+            <option
+              value="game-type"
+              disabled
+              selected
+              hidden
+              class="default-select"
+            >
+              GAME TYPE
+            </option>
+            <option value="single-player">Single Player</option>
+            <option value="local-co-op">Local Co-op</option>
+            <option value="local-pvp">Local Pvp</option>
+            <option value="online-co-op">Online Co-op</option>
+            <option value="online-pvp">Online Pvp</option>
+          </select>
+          <select name="sort-by-select" id="sort-by-select">
+            <option
+              value="sort-by"
+              disabled
+              selected
+              hidden
+              class="default-select"
+            >
+              SORT BY
+            </option>
+            <option value="title-a-z">Title A-Z</option>
+            <option value="title-z-a">Title Z-A</option>
+            <option value="released-date">Released Date</option>
+            <option value="recently-added">Recently Added</option>
+            <option value="metacritic-rating">Metacritic Rating</option>
+          </select>
+          <button class="btn reset-view-btn" id="reset-view-btn">
+            Reset View
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -165,7 +165,7 @@ body {
   margin: 5px 0;
 }
 
-.btn.learn-more {
+.btn {
   background-color: rgba(255, 255, 255, 0.4);
   color: #fff;
   padding: 10px 40px;
@@ -175,7 +175,7 @@ body {
   cursor: pointer;
 }
 
-.btn.learn-more:hover {
+.btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -282,4 +282,44 @@ body {
   transition: 0.5s ease-in-out;
   left: 0;
   /* left: -265px; */
+}
+
+/* Library styles */
+.library-title {
+  margin: 50px 0 20px 50px;
+  font-size: 3rem;
+}
+
+.library-form {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+}
+
+.library-form select {
+  margin: 0 10px;
+  flex: 1;
+  font-size: 1.2rem;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+
+.library-form .reset-view-btn {
+  flex: 1;
+}
+
+.library-form select option {
+  background-color: #fff;
+  color: #000;
+}
+
+.library-form select:first-of-type {
+  margin-left: 0;
+}
+
+.library-form select option:hover {
+  background-color: var(--luna-color-1);
 }
