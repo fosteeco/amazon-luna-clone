@@ -276,8 +276,9 @@ body {
 
 .card-container {
   display: inline-block;
+  justify-content: center;
   position: absolute;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   transition: 0.5s ease-in-out;
   left: 0;
   /* left: -265px; */

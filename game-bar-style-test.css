@@ -1,0 +1,120 @@
+.game-row-2 {
+  position: relative;
+  padding: 0 50px;
+  overflow: hidden;
+}
+.game-row {
+  text-align: center;
+}
+
+.game-row-2 h2.game-row-title {
+  margin: 0 0 10px 0;
+}
+
+.game-row-2 .row-card-2 {
+  /* display: inline-block;
+  justify-content: center;
+  align-items: center; */
+  /* margin: 0 10px; */
+  /* width: 16vw;
+  height: 9vw; */
+  /* min-width: 240px;
+  min-height: 135px; */
+  /* width: 240px;
+  height: 135px; */
+}
+
+.row-card > * {
+  margin: 0;
+}
+
+.game-row-2 .row-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 0;
+}
+
+.game-row-2-arrows .fa-chevron-right,
+.game-row-2-arrows .fa-chevron-left {
+  top: 50%;
+  margin: 0 10px;
+}
+
+.game-row-2-arrows .fa-chevron-right {
+  right: 0;
+}
+
+.game-row-2-arrows .fa-chevron-left {
+  left: 0;
+}
+
+.card-wrapper {
+  position: relative;
+  /* height: calc(9vw + 2px); */
+  min-height: 137px;
+  width: 100%;
+  /* max-width: 1060px; */
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  transition: 0.5s ease-in-out;
+  left: 0;
+  /* left: -265px; */
+}
+
+.card-wrapper-2 {
+  display: flex;
+  min-height: 113px;
+  height: 11vw;
+  flex-wrap: wrap;
+}
+
+.game-row-2 .row-card-2 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 10px; */
+  /* width: 16vw;
+    height: 9vw; */
+  /* min-width: 240px;
+    min-height: 135px; */
+  min-width: 200px;
+  min-height: 113px;
+  width: 19vw;
+  height: 11vw;
+}
+
+.row-card-2 > * {
+  margin: 0;
+}
+
+.game-row-2 .row-card-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 0;
+}
+
+.flex-card-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.flex-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* position: absolute; */
+  width: 100%;
+  justify-content: space-between;
+}

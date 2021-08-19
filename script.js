@@ -53,15 +53,14 @@ function showCardCode() {
     }
     if (cardEnd + start + 2 > wrapperWidth) {
       card.style.visibility = "hidden";
-      // card.style.display = "none";
+      // card.style.display = "none !important";
+      // card.classList.add("d-none");
     } else {
       card.style.visibility = "visible";
-      // card.style.display = "inline-block";
+      // card.style.display = "inline-block !important";
+      // card.classList.remove("d-none");
     }
   });
 }
 
 showCardCode();
-
-const oneCard = document.querySelector(".row-card");
-console.log(oneCard.offsetWidth);
