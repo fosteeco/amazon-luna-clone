@@ -320,6 +320,7 @@ body {
   margin-left: 0;
 }
 
-.library-form select option:hover {
-  background-color: var(--luna-color-1);
+.library-form select option:hover,
+.library-form select option:active {
+  background-color: var(--luna-color-1) !important;
 }
