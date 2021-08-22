@@ -12,7 +12,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="script.js" defer></script>
+    <!-- <script src="script.js" defer></script> -->
+    <script src="customSelectCode.js" defer></script>
     <title>Amazon Luna Clone</title>
   </head>
   <body>
@@ -61,65 +62,147 @@
       <div class="main-window">
         <h1 class="library-title">LIBRARY</h1>
         <form id="library-form" class="library-form">
-          <select name="genre-select" id="genre-select">
-            <option
-              value="genre"
-              disabled
-              selected
-              hidden
-              class="default-select"
-            >
-              GENRE
-            </option>
-            <option value="action">Action</option>
-            <option value="adventure">Adventure</option>
-            <option value="arcade">Arcade</option>
-            <option value="fighting">Fighting</option>
-            <option value="horror">Horror</option>
-            <option value="puzzle">Puzzle</option>
-            <option value="racing">Racing</option>
-            <option value="rpg">Rpg</option>
-            <option value="shooter">Shooter</option>
-            <option value="simulation">Simulation</option>
-            <option value="sports">Sports</option>
-            <option value="strategy">Strategy</option>
-          </select>
-          <select name="game-type-select" id="game-type-select">
-            <option
-              value="game-type"
-              disabled
-              selected
-              hidden
-              class="default-select"
-            >
-              GAME TYPE
-            </option>
-            <option value="single-player">Single Player</option>
-            <option value="local-co-op">Local Co-op</option>
-            <option value="local-pvp">Local Pvp</option>
-            <option value="online-co-op">Online Co-op</option>
-            <option value="online-pvp">Online Pvp</option>
-          </select>
-          <select name="sort-by-select" id="sort-by-select">
-            <option
-              value="sort-by"
-              disabled
-              selected
-              hidden
-              class="default-select"
-            >
-              SORT BY
-            </option>
-            <option value="title-a-z">Title A-Z</option>
-            <option value="title-z-a">Title Z-A</option>
-            <option value="released-date">Released Date</option>
-            <option value="recently-added">Recently Added</option>
-            <option value="metacritic-rating">Metacritic Rating</option>
-          </select>
+          <div class="custom-select">
+            <select name="genre-select" id="genre-select">
+              <option value="genre">GENRE</option>
+              <option value="action">Action</option>
+              <option value="adventure">Adventure</option>
+              <option value="arcade">Arcade</option>
+              <option value="fighting">Fighting</option>
+              <option value="horror">Horror</option>
+              <option value="puzzle">Puzzle</option>
+              <option value="racing">Racing</option>
+              <option value="rpg">Rpg</option>
+              <option value="shooter">Shooter</option>
+              <option value="simulation">Simulation</option>
+              <option value="sports">Sports</option>
+              <option value="strategy">Strategy</option>
+            </select>
+          </div>
+          <div class="custom-select">
+            <select name="game-type-select" id="game-type-select">
+              <option value="game-type">GAME TYPE</option>
+              <option value="single-player">Single Player</option>
+              <option value="local-co-op">Local Co-op</option>
+              <option value="local-pvp">Local Pvp</option>
+              <option value="online-co-op">Online Co-op</option>
+              <option value="online-pvp">Online Pvp</option>
+            </select>
+          </div>
+          <div class="custom-select">
+            <select name="sort-by-select" id="sort-by-select">
+              <option value="sort-by">SORT BY</option>
+              <option value="title-a-z">Title A-Z</option>
+              <option value="title-z-a">Title Z-A</option>
+              <option value="released-date">Released Date</option>
+              <option value="recently-added">Recently Added</option>
+              <option value="metacritic-rating">Metacritic Rating</option>
+            </select>
+          </div>
           <button class="btn reset-view-btn" id="reset-view-btn">
             Reset View
           </button>
         </form>
+        <div class="game-row">
+          <div class="library-wrapper">
+            <div class="row-card">
+              <img src="./img/minecraft.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/csgo.png" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/brink-game-cover-art.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/little-big-planet.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/borderlands-1.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/saints-2.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/minecraft.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/csgo.png" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/brink-game-cover-art.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/little-big-planet.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/borderlands-1.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/saints-2.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/minecraft.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/csgo.png" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/brink-game-cover-art.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/little-big-planet.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/borderlands-1.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/saints-2.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/minecraft.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/csgo.png" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/brink-game-cover-art.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/little-big-planet.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/borderlands-1.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/saints-2.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/minecraft.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/csgo.png" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/brink-game-cover-art.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/little-big-planet.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/borderlands-1.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/saints-2.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/minecraft.jpg" alt="" />
+            </div>
+            <div class="row-card">
+              <img src="./img/csgo.png" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
