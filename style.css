@@ -226,13 +226,13 @@ body {
   display: inline-block;
   justify-content: center;
   align-items: center;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   /* width: 16vw;
   height: 9vw; */
   /* min-width: 240px;
   min-height: 135px; */
-  width: 240px;
-  height: 135px;
+  /* width: 240px; */
+  /* height: 135px; */
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
@@ -275,24 +275,37 @@ body {
 .card-wrapper {
   position: relative;
   /* height: calc(9vw + 2px); */
-  min-height: 137px;
+  /* min-height: 137px; */
   width: 100%;
+  white-space: nowrap;
   /* max-width: 1060px; */
   margin: 0;
-  width: 100%;
   overflow: hidden;
-  align-items: center;
-  justify-content: center;
+  display: flex;
 }
 
 .card-container {
-  display: inline-block;
-  justify-content: center;
-  position: absolute;
-  /* white-space: nowrap; */
+  display: inline-grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  /* position: absolute; */
+  position: relative;
   transition: 0.5s ease-in-out;
   left: 0;
   /* left: -265px; */
+}
+
+.grid-wrapper {
+  position: relative;
+  margin: 0;
+  left: 0;
+}
+
+.test-btn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
 }
 
 /* Library styles */
