@@ -448,6 +448,29 @@ body {
   color: #fff !important;
 }
 
+/* Search page */
+.search-title {
+  margin-bottom: 0;
+}
+
+.search-wrap {
+  width: 100%;
+  padding: 0 50px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px 20px 0 1px;
+  font-size: 1.22rem;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.search-box:focus {
+  outline: none;
+}
+
 @media (min-width: 1024px) {
   .library-wrapper {
     grid-template-columns: repeat(5, 1fr);
